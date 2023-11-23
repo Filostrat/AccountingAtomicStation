@@ -8,13 +8,15 @@ namespace CCL.Security.Identity
 {
     public abstract class User
     {
+        public int UserId { get; }
         public string FirstName { get; }
         public string LastName { get; }
-        public string DepartmentId { get; }
+        public int DepartmentId { get; }
         protected string UserType { get; }
 
-        public User(string firstName, string lastName, string departmentId, string userType)
+        public User(int userId, string firstName, string lastName, int departmentId, string userType)
         {
+            UserId = userId;
             FirstName = firstName;
             LastName = lastName;
             DepartmentId = departmentId;
