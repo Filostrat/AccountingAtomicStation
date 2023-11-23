@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CCL.Security.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +14,7 @@ namespace DAL.Entities
         public string Name { get; set; }
 
         public List<Project> ListProjects { get; set; }
+
+        public List<User> ListUsers { get; set; }
     }
 }
