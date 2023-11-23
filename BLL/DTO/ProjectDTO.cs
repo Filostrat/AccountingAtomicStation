@@ -4,16 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Entities
+namespace BLL.DTO
 {
-    public class Project
+    public class ProjectDTO
     {
         public int ProjectID { get; set; }
 
         public string Name { get; set; }
 
         public string Description { get; set; }
-
-        public int DepartmentID { get; set; }
     }
 }
